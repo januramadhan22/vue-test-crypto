@@ -1,5 +1,28 @@
 <template lang="">
-  <div class="pt-20 pb-40 px-14 space-y-14 bg-gray-100">
+  <!-- Iklan Content -->
+  <div class="relative px-14 pt-32">
+    <div class="flex -mb-8 px-10 py-14 bg-blue-600 rounded-t-[52px] relative">
+      <div class="flex flex-col gap-2">
+        <h1 class="text-4xl font-bold text-white">Mulai Investasi Sekarang</h1>
+        <p class="text-white text-lg">
+          Daftar dalam hitungan menit, langsung mulai investasi.
+        </p>
+        <button
+          class="px-10 py-2 bg-white rounded-lg text-blue-600 font-semibold w-fit mt-8"
+        >
+          Download Sekarang
+        </button>
+      </div>
+      <img
+        src="https://pintu.co.id/_next/image?url=%2Fstatic%2Fimages%2Fshared%2Fbrand-ambassador.webp&w=640&q=75"
+        alt=""
+        class="absolute w-1/3 bottom-0 right-32"
+      />
+    </div>
+  </div>
+
+  <!-- Footer Content -->
+  <div class="pt-16 pb-40 px-14 space-y-14 bg-gray-100">
     <!-- Top Content -->
     <div class="w-full grid grid-cols-4 grid-flow-row gap-10">
       <!-- Brand and Sosmed -->
