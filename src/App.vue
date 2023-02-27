@@ -7,6 +7,19 @@ import Table from "./components/dashboard/Table.vue";
 import CryptoDesc from "./components/about/CryptoDesc.vue";
 import MoreDesc from "./components/about/MoreDesc.vue";
 import Footer from "./components/Footer.vue";
+import { onMounted, ref } from "vue";
+
+const cryptosData = ref([]);
+
+const getDatas = async () => {
+  return fetch("https://api.pintu.co.id/v2/trade/price-changes")
+    .then((response) => response.json())
+    .then((data) => console.log(data.payload));
+};
+
+onMounted(() => {
+  getDatas();
+});
 </script>
 
 <template>
