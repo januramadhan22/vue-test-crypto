@@ -222,7 +222,7 @@ export default {
     </div>
 
     <!-- Mobile View -->
-    <button @click="menuOpen()">
+    <button @click="menuOpen()" class="block md:hidden">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
