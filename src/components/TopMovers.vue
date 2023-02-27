@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full px-14 py-8">
+  <div class="w-full px-8 md:px-14 py-8">
     <div class="flex w-fit items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,9 @@
       <h1 class="text-xl font-medium">Top Movers (24 Jam)</h1>
     </div>
 
-    <div class="grid grid-cols-6 py-4 justify-center gap-7">
+    <div
+      class="flex justify-between md:grid md:grid-cols-6 py-4 md:justify-center gap-7 overflow-x-scroll lg:overflow-hidden"
+    >
       <div
         class="space-y-1 p-4 rounded-sm bg-white cursor-pointer hover:bg-gray-100"
       >

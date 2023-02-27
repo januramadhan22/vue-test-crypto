@@ -1,5 +1,7 @@
 <template>
-  <div class="flex items-center gap-2">
+  <div
+    class="w-full flex items-center gap-2 overflow-x-scroll lg:overflow-x-hidden"
+  >
     <button
       class="px-3 py-2 bg-blue-100 rounded text-blue-600 font-medium text-sm flex items-center gap-1"
     >
@@ -100,7 +102,7 @@
       DEX
     </button>
     <button
-      class="px-3 py-2 bg-blue-100 rounded text-blue-600 font-medium text-sm flex items-center gap-1"
+      class="px-3 py-2 w-fit bg-blue-100 rounded text-blue-600 font-medium text-sm flex items-center gap-1"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

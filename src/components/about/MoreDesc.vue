@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="grid grid-cols-3 gap-10">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
     <div class="space-y-4 text-left">
       <svg
         xmlns="http://www.w3.org/2000/svg"

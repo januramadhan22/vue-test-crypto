@@ -1,7 +1,9 @@
 <template lang="">
   <!-- Iklan Content -->
-  <div class="relative px-14 pt-32">
-    <div class="flex -mb-8 px-10 py-14 bg-blue-600 rounded-t-[52px] relative">
+  <div class="relative px-8 md:px-14 pt-32">
+    <div
+      class="flex flex-col md:flex-row gap-10 -mb-8 px-10 pt-14 md:py-14 bg-blue-600 rounded-t-[52px] relative"
+    >
       <div class="flex flex-col gap-2">
         <h1 class="text-4xl font-bold text-white">Mulai Investasi Sekarang</h1>
         <p class="text-white text-lg">
@@ -16,7 +18,7 @@
       <img
         src="https://pintu.co.id/_next/image?url=%2Fstatic%2Fimages%2Fshared%2Fbrand-ambassador.webp&w=640&q=75"
         alt=""
-        class="absolute w-1/3 bottom-0 right-32"
+        class="static md:absolute w-full md:w-1/3 bottom-0 right-32"
       />
     </div>
   </div>

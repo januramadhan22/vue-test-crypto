@@ -17,9 +17,9 @@ const search = () => {
 };
 
 const getDatas = async () => {
-  return fetch("https://api.pintu.co.id/v2/trade/price-changes")
+  return fetch("https://api.pintu.co.id/v2/wallet/supportedCurrencies")
     .then((response) => response.json())
-    .then((data) => console.log(data.payload));
+    .then((datas) => (cryptosData.value = datas.payload));
 };
 
 onMounted(() => {
@@ -30,14 +30,14 @@ onMounted(() => {
 <template @click="search()">
   <Navbar />
 
-  <header class="w-full flex justify-between items-center px-14 mt-5">
-    <h1 class="text-3xl font-bold font-sans">
+  <header class="w-full flex justify-between items-center px-8 md:px-14 mt-5">
+    <h1 class="text-xl md:text-3xl font-bold font-sans">
       Harga Crypto dalam Rupiah Hari Ini
     </h1>
     <div class="relative">
       <div
         @click="search"
-        class="px-4 py-2 flex items-center gap-4 text-lg text-gray-600 bg-gray-100 w-96 rounded-lg group cursor-pointer relative"
+        class="px-0 py-0 md:px-4 md:py-2 flex items-center gap-4 text-lg text-gray-600 bg-transparent md:bg-gray-100 w-fit md:w-96 rounded-lg group cursor-pointer relative"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,19 +53,19 @@ onMounted(() => {
             d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
           />
         </svg>
-        <p>Cari aset di Pintu...</p>
+        <p class="hidden md:block">Cari aset di Pintu...</p>
       </div>
 
       <!-- Open Search -->
       <div
         :class="[
           openSearch
-            ? `flex absolute w-full bg-white h-72 top-0 left-0 shadow-md border rounded-lg p-4 z-40`
+            ? ` flex flex-col gap-2 absolute w-96 md:w-full bg-white h-96 top-0 right-0  shadow-md border rounded-lg p-4 z-40`
             : `hidden`,
         ]"
       >
         <form
-          class="px-4 py-2 h-fit flex items-center gap-4 text-lg text-gray-600 bg-gray-100 w-96 rounded-lg group cursor-pointer"
+          class="w-full px-4 py-2 h-fit flex items-center gap-4 text-lg text-gray-600 bg-gray-100 rounded-lg group cursor-pointer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -102,18 +102,37 @@ onMounted(() => {
             </svg>
           </button>
         </form>
+
+        <!-- List Currency -->
+        <div class="w-full flex flex-col overflow-y-scroll">
+          <div
+            v-for="crypto in cryptosData"
+            :key="index"
+            class="cursor-pointer w-full px-4 py-3 flex items-center justify-between rounded-md hover:bg-gray-100"
+          >
+            <span
+              class="flex items-center gap-2 font-medium text-lg text-gray-800"
+            >
+              <img :src="crypto.logo" alt="" class="w-4" />
+              {{ crypto.name }}</span
+            >
+            <span class="text-lg text-gray-500">{{
+              crypto.currencySymbol
+            }}</span>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
   <TopMovers />
 
-  <div class="px-14 space-y-4">
+  <div class="px-8 md:px-14 space-y-4">
     <TabVue />
     <Table />
   </div>
 
-  <div class="px-14 space-y-8 py-8">
+  <div class="px-8 md:px-14 space-y-8 py-8">
     <CryptoDesc />
     <MoreDesc />
   </div>

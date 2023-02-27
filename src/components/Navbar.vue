@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="px-14 py-8 flex justify-between items-center relative">
+  <div class="px-8 md:px-14 py-8 flex justify-between items-center relative">
     <button>
       <img
         src="https://bitcoinindonesia.net/wp-content/uploads/2020/06/logo-pintu-crypto-700x149.png"
