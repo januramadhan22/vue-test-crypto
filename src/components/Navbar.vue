@@ -14,7 +14,9 @@ export default {
 </script>
 
 <template>
-  <div class="px-8 md:px-14 py-8 flex justify-between items-center relative">
+  <div
+    class="w-full px-5 md:px-14 py-8 flex justify-between items-center relative"
+  >
     <button>
       <img
         src="https://bitcoinindonesia.net/wp-content/uploads/2020/06/logo-pintu-crypto-700x149.png"
@@ -24,7 +26,7 @@ export default {
     </button>
 
     <!-- Desktop View -->
-    <div class="hidden md:flex items-center text-lg font-normal font-sans">
+    <div class="hidden lg:flex items-center text-lg font-normal font-sans">
       <!-- Fitur -->
       <div class="px-10 group cursor-pointer relative dropdown">
         <span class="group-hover:opacity-40">Fitur</span>
@@ -222,7 +224,7 @@ export default {
     </div>
 
     <!-- Mobile View -->
-    <button @click="menuOpen()" class="block md:hidden">
+    <button @click="menuOpen()" class="block lg:hidden">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

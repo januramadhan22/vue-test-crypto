@@ -27,11 +27,11 @@ onMounted(() => {
 });
 </script>
 
-<template @click="search()">
+<template>
   <Navbar />
 
-  <header class="w-full flex justify-between items-center px-8 md:px-14 mt-5">
-    <h1 class="text-xl md:text-3xl font-bold font-sans">
+  <header class="w-full flex justify-between items-center px-5 md:px-14 mt-5">
+    <h1 class="w-[200px] md:w-full text-xl md:text-3xl font-bold font-sans">
       Harga Crypto dalam Rupiah Hari Ini
     </h1>
     <div class="relative">
@@ -60,7 +60,7 @@ onMounted(() => {
       <div
         :class="[
           openSearch
-            ? ` flex flex-col gap-2 absolute w-96 md:w-full bg-white h-96 top-0 right-0  shadow-md border rounded-lg p-4 z-40`
+            ? ` flex flex-col gap-2 absolute w-[340px] sm:w-96 md:w-full bg-white h-96 top-0 right-0  shadow-md border rounded-lg p-4 z-40`
             : `hidden`,
         ]"
       >
@@ -127,12 +127,12 @@ onMounted(() => {
 
   <TopMovers />
 
-  <div class="px-8 md:px-14 space-y-4">
+  <div class="px-5 md:px-14 space-y-4">
     <TabVue />
     <Table />
   </div>
 
-  <div class="px-8 md:px-14 space-y-8 py-8">
+  <div class="px-5 md:px-14 space-y-8 py-8">
     <CryptoDesc />
     <MoreDesc />
   </div>

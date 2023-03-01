@@ -1,12 +1,16 @@
 <template lang="">
   <!-- Iklan Content -->
-  <div class="relative px-8 md:px-14 pt-32">
+  <div class="relative px-5 md:px-14 pt-32">
     <div
       class="flex flex-col md:flex-row gap-10 -mb-8 px-10 pt-14 md:py-14 bg-blue-600 rounded-t-[52px] relative"
     >
       <div class="flex flex-col gap-2">
-        <h1 class="text-4xl font-bold text-white">Mulai Investasi Sekarang</h1>
-        <p class="text-white text-lg">
+        <h1
+          class="text-4xl font-bold text-white w-full md:max-w-sm lg:max-w-md"
+        >
+          Mulai Investasi Sekarang
+        </h1>
+        <p class="text-white text-lg w-full md:max-w-[280px] lg:max-w-md">
           Daftar dalam hitungan menit, langsung mulai investasi.
         </p>
         <button
@@ -18,17 +22,19 @@
       <img
         src="https://pintu.co.id/_next/image?url=%2Fstatic%2Fimages%2Fshared%2Fbrand-ambassador.webp&w=640&q=75"
         alt=""
-        class="static md:absolute w-full md:w-1/3 bottom-0 right-32"
+        class="static md:absolute w-full md:w-1/2 lg:w-1/3 bottom-0 md:right-8 lg:right-32"
       />
     </div>
   </div>
 
   <!-- Footer Content -->
-  <div class="pt-16 pb-40 px-14 space-y-14 bg-gray-100">
+  <div class="pt-16 pb-52 md:pb-40 px-5 md:px-14 space-y-14 bg-gray-100">
     <!-- Top Content -->
-    <div class="w-full grid grid-cols-4 grid-flow-row gap-10">
+    <div
+      class="w-full flex flex-col lg:grid lg:grid-cols-4 lg:grid-flow-row gap-7 lg:gap-10"
+    >
       <!-- Brand and Sosmed -->
-      <div class="space-y-8 row-span-1 col-span-1 h-36">
+      <div class="space-y-8 lg:row-span-1 lg:col-span-1 h-fit lg:h-36">
         <img
           src="https://bitcoinindonesia.net/wp-content/uploads/2020/06/logo-pintu-crypto-700x149.png"
           alt=""
@@ -119,7 +125,9 @@
       </div>
 
       <!-- Alamat -->
-      <div class="space-y-6 row-span-2 col-span-1 h-36">
+      <div
+        class="space-y-4 lg:space-y-6 lg:row-span-2 lg:col-span-1 h-fit lg:h-36"
+      >
         <h3 class="text-lg font-bold">Alamat Perusahaan</h3>
         <div class="space-y-2">
           <h4 class="font-semibold">Kantor Pusat</h4>
@@ -140,9 +148,11 @@
       </div>
 
       <!-- Pintu -->
-      <div class="space-y-6 row-span-2 col-span-1 h-36">
+      <div
+        class="space-y-4 lg:space-y-6 lg:row-span-2 lg:col-span-1 h-fit lg:h-36"
+      >
         <h3 class="text-lg font-bold">Pintu</h3>
-        <ul class="space-y-5">
+        <ul class="flex flex-row flex-wrap lg:flex-col gap-3 md:gap-5">
           <li><button>Produk</button></li>
           <li><button>Harga Crypto</button></li>
           <li><button>Biaya Transaksi</button></li>
@@ -153,9 +163,11 @@
       </div>
 
       <!-- Perusahaan -->
-      <div class="space-y-6 row-span-2 col-span-1 h-36">
+      <div
+        class="space-y-4 lg:space-y-6 lg:row-span-2 lg:col-span-1 h-fit lg:h-36"
+      >
         <h3 class="text-lg font-bold">Perusahaan</h3>
-        <ul class="space-y-5">
+        <ul class="flex flex-row flex-wrap lg:flex-col gap-3 md:gap-5">
           <li><button>Tentang</button></li>
           <li><button>Hubungi Kami</button></li>
           <li>
@@ -180,7 +192,7 @@
       </div>
 
       <!-- Terdaftar -->
-      <div class="col-span-1 row-span-1 h-36">
+      <div class="space-y-4 lg:col-span-1 lg:row-span-1 h-fit lg:h-36">
         <h3 class="font-bold">Terdaftar dan Diawasi</h3>
         <div class="flex flex-wrap items-center">
           <img

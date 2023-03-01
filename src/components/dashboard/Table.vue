@@ -3,32 +3,76 @@
     <table
       class="w-full border rounded-xl table-auto border-separate border-spacing-0 text-left"
     >
-      <thead class="text-lg text-gray-400 font-bold">
+      <thead class="text-xs md:text-lg text-gray-400">
         <tr>
-          <th class="pl-[70px] py-4 border-b">CRYPTO</th>
-          <th class="py-4 border-b">HARGA</th>
-          <th class="text-center py-4 border-b">24 JAM</th>
-          <th class="text-center py-4 border-b">1 MGG</th>
-          <th class="text-center py-4 border-b">1 BLN</th>
-          <th class="text-center py-4 border-b">1 THN</th>
+          <th
+            class="pl-6 md:pl-[70px] py-2 md:py-4 border-b font-normal md:font-bold"
+          >
+            CRYPTO
+          </th>
+          <th class="py-2 md:py-4 border-b font-normal md:font-bold">HARGA</th>
+          <th
+            class="text-center py-2 md:py-4 border-b font-normal md:font-bold"
+          >
+            24 JAM
+          </th>
+          <th
+            class="text-center py-2 md:py-4 border-b font-normal md:font-bold"
+          >
+            1 MGG
+          </th>
+          <th
+            class="text-center py-2 md:py-4 border-b font-normal md:font-bold"
+          >
+            1 BLN
+          </th>
+          <th
+            class="text-center py-2 md:py-4 border-b font-normal md:font-bold"
+          >
+            1 THN
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td
-            class="flex items-center justify-between pr-16 py-4 pl-4 border-b"
+            class="flex items-center justify-between pr-4 md:pr-16 py-2 md:py-4 pl-2 md:pl-4 border-b"
           >
-            <span class="flex items-center gap-4 text-lg font-semibold">
-              <div class="w-10 h-10 bg-slate-400 rounded-full" />
+            <span
+              class="flex items-center gap-2 md:gap-4 text-xs md:text-lg font-normal md:font-semibold"
+            >
+              <div class="w-3 h-3 md:w-10 md:h-10 bg-slate-400 rounded-full" />
               Bitcoin</span
             >
-            <span class="text-lg text-gray-400">BTC</span>
+            <span class="hidden md:block text-xs md:text-lg text-gray-400"
+              >BTC</span
+            >
           </td>
-          <td class="text-lg font-semibold py-4 border-b">Rp 111.111.123</td>
-          <td class="text-center text-lg font-semibold py-4 border-b">1.57%</td>
-          <td class="text-center text-lg font-semibold py-4 border-b">1.57%</td>
-          <td class="text-center text-lg font-semibold py-4 border-b">1.57%</td>
-          <td class="text-center text-lg font-semibold py-4 border-b">1.57%</td>
+          <td
+            class="text-xs md:text-lg font-base md:font-semibold py-2 md:py-4 border-b"
+          >
+            Rp 111.111.123
+          </td>
+          <td
+            class="text-center text-xs md:text-lg font-base md:font-semibold py-2 md:py-4 border-b"
+          >
+            1.57%
+          </td>
+          <td
+            class="text-center text-xs md:text-lg font-base md:font-semibold py-2 md:py-4 border-b"
+          >
+            1.57%
+          </td>
+          <td
+            class="text-center text-xs md:text-lg font-base md:font-semibold py-2 md:py-4 border-b"
+          >
+            1.57%
+          </td>
+          <td
+            class="text-center text-xs md:text-lg font-base md:font-semibold py-2 md:py-4 border-b"
+          >
+            1.57%
+          </td>
         </tr>
       </tbody>
     </table>

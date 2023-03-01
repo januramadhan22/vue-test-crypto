@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full fixed z-40 bottom-0 px-8 md:px-14 py-7 bg-blue-600 flex justify-between items-center"
+    class="w-full fixed z-40 bottom-0 px-5 md:px-14 py-7 bg-blue-600 flex justify-between items-center"
   >
     <h2 class="text-white text-lg font-medium">
       Investasi crypto simple, aman, dan tanpa ribet. Mulai dari Rp 11.000.
